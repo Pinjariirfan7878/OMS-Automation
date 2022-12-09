@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Case Id: XXXXXX]]>
+    </line>
+    <line>
+      <![CDATA[PO ID: PO1047007637]]>
+    </line>
+    <line>
+      <![CDATA[Step:1 P.O Created Successfully And Verification Passed ]]>
+    </line>
+    <line>
+      <![CDATA[Step:2 P.O Approved By Procurement And Verify Passed ]]>
+    </line>
+    <line>
+      <![CDATA[Step:3 P.O Approved By Finance And Verify Passed ]]>
+    </line>
+    <line>
+      <![CDATA[Step:4 Stock Inwarded Successfully And Verify Passed ]]>
+    </line>
+    <line>
+      <![CDATA[PO ID : PO1047007637 GRN number : GRN08122201363]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-12-08T12:10:21 IST" name="Default suite" finished-at="2022-12-08T12:17:47 IST" duration-ms="445265">
+    <groups>
+    </groups>
+    <test started-at="2022-12-08T12:10:21 IST" name="Default test" finished-at="2022-12-08T12:17:47 IST" duration-ms="445265">
+      <class name="com.OMS.PO.TC_002_CreatePurchaseOrderTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:21 IST" name="connectToDB" finished-at="2022-12-08T12:10:21 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:22 IST" name="launchBrowser" finished-at="2022-12-08T12:10:28 IST" duration-ms="6904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:28 IST" name="login" finished-at="2022-12-08T12:10:44 IST" duration-ms="15576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="purchase_order_HappyFlow()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:44 IST" name="purchase_order_HappyFlow" finished-at="2022-12-08T12:17:44 IST" duration-ms="420429" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Id: XXXXXX]]>
+            </line>
+            <line>
+              <![CDATA[PO ID: PO1047007637]]>
+            </line>
+            <line>
+              <![CDATA[Step:1 P.O Created Successfully And Verification Passed ]]>
+            </line>
+            <line>
+              <![CDATA[Step:2 P.O Approved By Procurement And Verify Passed ]]>
+            </line>
+            <line>
+              <![CDATA[Step:3 P.O Approved By Finance And Verify Passed ]]>
+            </line>
+            <line>
+              <![CDATA[Step:4 Stock Inwarded Successfully And Verify Passed ]]>
+            </line>
+            <line>
+              <![CDATA[PO ID : PO1047007637 GRN number : GRN08122201363]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- purchase_order_HappyFlow -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:44 IST" name="logout" finished-at="2022-12-08T12:17:47 IST" duration-ms="2178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:47 IST" name="close" finished-at="2022-12-08T12:17:47 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="disconnectToDB()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:47 IST" name="disconnectToDB" finished-at="2022-12-08T12:17:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectToDB -->
+      </class> <!-- com.OMS.PO.TC_002_CreatePurchaseOrderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
