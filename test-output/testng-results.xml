@@ -1,83 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Test Case Id: XXXXXX]]>
     </line>
     <line>
-      <![CDATA[PO ID: PO1047007637]]>
-    </line>
-    <line>
-      <![CDATA[Step:1 P.O Created Successfully And Verification Passed ]]>
-    </line>
-    <line>
-      <![CDATA[Step:2 P.O Approved By Procurement And Verify Passed ]]>
-    </line>
-    <line>
-      <![CDATA[Step:3 P.O Approved By Finance And Verify Passed ]]>
-    </line>
-    <line>
-      <![CDATA[Step:4 Stock Inwarded Successfully And Verify Passed ]]>
-    </line>
-    <line>
-      <![CDATA[PO ID : PO1047007637 GRN number : GRN08122201363]]>
+      <![CDATA[purchase_order_ErrorFlow Got Failed]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-12-08T12:10:21 IST" name="Default suite" finished-at="2022-12-08T12:17:47 IST" duration-ms="445265">
+  <suite started-at="2022-12-09T15:55:56 IST" name="Default suite" finished-at="2022-12-09T15:59:31 IST" duration-ms="215143">
     <groups>
     </groups>
-    <test started-at="2022-12-08T12:10:21 IST" name="Default test" finished-at="2022-12-08T12:17:47 IST" duration-ms="445265">
-      <class name="com.OMS.PO.TC_002_CreatePurchaseOrderTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:21 IST" name="connectToDB" finished-at="2022-12-08T12:10:21 IST" duration-ms="5" status="PASS">
+    <test started-at="2022-12-09T15:55:56 IST" name="Default test" finished-at="2022-12-09T15:59:31 IST" duration-ms="215143">
+      <class name="com.OMS.PO.TC_003_createPurchaseOrderTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:55:56 IST" name="connectToDB" finished-at="2022-12-09T15:55:56 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:22 IST" name="launchBrowser" finished-at="2022-12-08T12:10:28 IST" duration-ms="6904" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:55:56 IST" name="launchBrowser" finished-at="2022-12-09T15:56:04 IST" duration-ms="7759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:28 IST" name="login" finished-at="2022-12-08T12:10:44 IST" duration-ms="15576" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:56:04 IST" name="login" finished-at="2022-12-09T15:56:43 IST" duration-ms="39329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="purchase_order_HappyFlow()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:10:44 IST" name="purchase_order_HappyFlow" finished-at="2022-12-08T12:17:44 IST" duration-ms="420429" status="PASS">
+        <test-method signature="purchase_order_ErrorFlow()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:56:43 IST" name="purchase_order_ErrorFlow" finished-at="2022-12-09T15:59:24 IST" duration-ms="160806" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id="payment_terms"]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90721b315b756f655450e5013b346858, findElement {using=xpath, value=//select[@id="payment_terms"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\IRFAN~1.PIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52123/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 90721b315b756f655450e5013b346858]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id="payment_terms"]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [90721b315b756f655450e5013b346858, findElement {using=xpath, value=//select[@id="payment_terms"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\IRFAN~1.PIN\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52123/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 90721b315b756f655450e5013b346858
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy22.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at com.oms.GenericLib.WebdriverActionclass.select_dd_by_index(WebdriverActionclass.java:63)
+at com.OMS.PO.TC_003_createPurchaseOrderTest.purchase_order_ErrorFlow(TC_003_createPurchaseOrderTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Test Case Id: XXXXXX]]>
             </line>
             <line>
-              <![CDATA[PO ID: PO1047007637]]>
-            </line>
-            <line>
-              <![CDATA[Step:1 P.O Created Successfully And Verification Passed ]]>
-            </line>
-            <line>
-              <![CDATA[Step:2 P.O Approved By Procurement And Verify Passed ]]>
-            </line>
-            <line>
-              <![CDATA[Step:3 P.O Approved By Finance And Verify Passed ]]>
-            </line>
-            <line>
-              <![CDATA[Step:4 Stock Inwarded Successfully And Verify Passed ]]>
-            </line>
-            <line>
-              <![CDATA[PO ID : PO1047007637 GRN number : GRN08122201363]]>
+              <![CDATA[purchase_order_ErrorFlow Got Failed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- purchase_order_HappyFlow -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:44 IST" name="logout" finished-at="2022-12-08T12:17:47 IST" duration-ms="2178" status="PASS">
+        </test-method> <!-- purchase_order_ErrorFlow -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:59:24 IST" name="logout" finished-at="2022-12-09T15:59:31 IST" duration-ms="6803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:47 IST" name="close" finished-at="2022-12-08T12:17:47 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:59:31 IST" name="close" finished-at="2022-12-09T15:59:31 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="disconnectToDB()[pri:0, instance:com.OMS.PO.TC_002_CreatePurchaseOrderTest@52719fb6]" started-at="2022-12-08T12:17:47 IST" name="disconnectToDB" finished-at="2022-12-08T12:17:47 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="disconnectToDB()[pri:0, instance:com.OMS.PO.TC_003_createPurchaseOrderTest@4f80542f]" started-at="2022-12-09T15:59:31 IST" name="disconnectToDB" finished-at="2022-12-09T15:59:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disconnectToDB -->
-      </class> <!-- com.OMS.PO.TC_002_CreatePurchaseOrderTest -->
+      </class> <!-- com.OMS.PO.TC_003_createPurchaseOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

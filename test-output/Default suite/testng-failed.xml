@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OMS.PO.TC_002_CreatePurchaseOrderTest">
+      <class name="com.OMS.PO.TC_003_createPurchaseOrderTest">
         <methods>
-          <include name="purchase_order_HappyFlow"/>
           <include name="login"/>
           <include name="close"/>
           <include name="disconnectToDB"/>
+          <include name="purchase_order_ErrorFlow"/>
           <include name="connectToDB"/>
           <include name="launchBrowser"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.OMS.PO.TC_002_CreatePurchaseOrderTest -->
+      </class> <!-- com.OMS.PO.TC_003_createPurchaseOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
