@@ -34,7 +34,7 @@ public class TC_002_CreatePurchaseOrderTest extends BaseUtilityClass {
 		
 		
 		
-		Reporter.log("Test Case Id: Github",true);
+		Reporter.log("Test Case Id: Github ",true);
 		homepage.getPurchase_tab().click();
 		homepage.getPurchase_order_option().click();
 		puchase_order.getCreate_Purchase_Order_button().click();
