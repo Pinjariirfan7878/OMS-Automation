@@ -60,7 +60,7 @@ public class MylistenerClass extends BaseUtilityClass implements ITestListener{
 	@Override
 	public void onStart(ITestContext context) {
 		webaction=new WebdriverActionclass(driver);
-		reporter =new ExtentSparkReporter(System.getProperty("user.dir")+IAutoconstant.Extendreport_PATH+"Extent_Report"+".html");
+		reporter =new ExtentSparkReporter(System.getProperty("user.dir")+IAutoconstant.Extendreport_PATH+"ExtentReport"+".html");
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setDocumentTitle("OMS-DEMO");
 		

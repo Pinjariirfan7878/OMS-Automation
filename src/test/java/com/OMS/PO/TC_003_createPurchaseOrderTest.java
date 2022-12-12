@@ -10,7 +10,7 @@ import com.ObjectRepo.Purchase_Order_OMS_MedikabazaarPage;
 import com.oms.GenericLib.BaseUtilityClass;
 import com.oms.GenericLib.FileLibClass;
 import com.oms.GenericLib.WebdriverActionclass;
-//@Listeners(com.oms.GenericLib.MylistenerClass.class)
+@Listeners(com.oms.GenericLib.MylistenerClass.class)
 
 public class TC_003_createPurchaseOrderTest extends BaseUtilityClass {
 
