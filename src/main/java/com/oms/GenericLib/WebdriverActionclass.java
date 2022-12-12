@@ -105,13 +105,15 @@ public class WebdriverActionclass extends BaseUtilityClass {
 
 		TakesScreenshot ts=(TakesScreenshot)sdriver;
 		File scr = ts.getScreenshotAs(OutputType.FILE);
-		String path=System.getProperty("user.dir")+IAutoconstant.Screenshot_Failed_PATH+"TC_XXXX"+"_"+methodName+"_"+currentDateTime()+".png";
+		String path=IAutoconstant.Screenshot_Failed_PATH+"TC_XXXX"+"_"+methodName+"_"+currentDateTime()+".png";
 		File dsn=new File(path);
 		try {
 			Files.copy(scr, dsn);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println(path);
+		System.out.println(dsn.getAbsolutePath());
 		return dsn.getAbsolutePath();
 	}
 

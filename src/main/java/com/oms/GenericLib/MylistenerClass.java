@@ -46,6 +46,8 @@ public class MylistenerClass extends BaseUtilityClass implements ITestListener{
 		
 		webaction=new WebdriverActionclass(driver);
 		String dsn =webaction.screenshot_fail(result.getName());
+		System.out.println(dsn);
+		
 		test.addScreenCaptureFromPath(dsn);
 		
 		
