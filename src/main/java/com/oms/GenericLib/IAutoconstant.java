@@ -6,7 +6,7 @@ public interface IAutoconstant {
 	String EXCEL_URL="./Data/URL.xlsx";
 	String EXCEL_TestData ="./Data/TestData.xlsx";
 	String Screenshot_PATH_PO="/Reports/ScreenShot/PO/";
-	String Screenshot_Failed_PATH="/Reports/ScreenShot/Failed_Screenshot/";
+	String Screenshot_Failed_PATH="./Reports/ScreenShot/Failed_Screenshot/";
 	String Extendreport_PATH="./Reports/Extent_Reports/";
 
 	

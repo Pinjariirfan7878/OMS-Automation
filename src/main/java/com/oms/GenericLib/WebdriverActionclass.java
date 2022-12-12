@@ -112,7 +112,7 @@ public class WebdriverActionclass extends BaseUtilityClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return path;
+		return dsn.getAbsolutePath();
 	}
 
 	public String screenshot(String name,String flowname)

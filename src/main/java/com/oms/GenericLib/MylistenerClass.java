@@ -45,8 +45,8 @@ public class MylistenerClass extends BaseUtilityClass implements ITestListener{
 		test.log(Status.FAIL,result.getMethod().getMethodName()+" Got Failed");
 		
 		webaction=new WebdriverActionclass(driver);
-		String path = webaction.screenshot_fail(result.getName());
-		test.addScreenCaptureFromPath(path);
+		String dsn =webaction.screenshot_fail(result.getName());
+		test.addScreenCaptureFromPath(dsn);
 		
 		
 	}
